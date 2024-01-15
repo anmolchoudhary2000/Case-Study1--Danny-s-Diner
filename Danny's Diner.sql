@@ -1,11 +1,9 @@
-create Database dannys_diner;
- use  dannys_diner
- 
 CREATE TABLE sales (
   customer_id VARCHAR(1),
   order_date DATE,
   product_id INTEGER
 );
+
 
 INSERT INTO sales
   (customer_id, order_date, product_id)
@@ -25,7 +23,9 @@ VALUES
   ('C', '2021-01-01', '3'),
   ('C', '2021-01-01', '3'),
   ('C', '2021-01-07', '3');
-select * from menu
+
+
+
 
 CREATE TABLE menu (
   product_id INTEGER,
@@ -33,22 +33,26 @@ CREATE TABLE menu (
   price INTEGER
 );
 
+
+
 INSERT INTO menu
   (product_id, product_name, price)
 VALUES
   ('1', 'sushi', '10'),
   ('2', 'curry', '15'),
   ('3', 'ramen', '12');
-  
+
+
+
   CREATE TABLE members (
   customer_id VARCHAR(1),
   join_date DATE
 );
+
+
 
 INSERT INTO members
   (customer_id, join_date)
 VALUES
   ('A', '2021-01-07'),
   ('B', '2021-01-09');
-  
-  select * from members
