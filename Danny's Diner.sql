@@ -1,4 +1,4 @@
-# Sales Table
+# Sales 
 
 CREATE TABLE sales (
   customer_id VARCHAR(1),
